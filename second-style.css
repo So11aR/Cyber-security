@@ -1,0 +1,101 @@
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(images/matrix.gif);
+    height: 100vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ctf-text{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 45px;
+    color: rgb(0, 255, 0);
+}
+.outer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+    /* border: 1px solid rgb(0, 255, 0); */
+}
+.task{
+    border: 1px solid rgb(0, 255, 0);
+    padding: 1%;
+    width: 350px;
+    height: 255px;
+    margin: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+input[type="text"]{
+    margin: 4% 0 4% 0;
+    padding: 7px 15px;
+    border: 1px rgb(0, 255, 0) solid;
+    background: inherit;
+    color: yellow;
+    text-align: left;
+    font-size: 18px;
+	outline: none;
+}
+input[type="text"]:focus{
+    border: 1px yellow solid;
+}
+.input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.5s ease;}
+.input::-moz-placeholder                {opacity: 1; transition: opacity 0.5s ease;}
+.input:-moz-placeholder                 {opacity: 1; transition: opacity 0.5s ease;}
+.input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.5s ease;}
+.input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+.input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.5s ease;}
+.input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.5s ease;}
+.input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.5s ease;}
+
+.check-button{
+    padding: 7px 15px;
+    font-size: 18px;
+    background: inherit;
+    color: rgb(0, 255, 0);
+    border: 1px rgb(0, 255, 0) solid;
+    /* margin-top: 2%; */
+    font-family: 'Times New Roman', Times, serif;
+    transition: 1s color, 1s border;
+    cursor: pointer;
+    outline: none;
+}
+.check-button:hover{
+    color: yellow;
+    border: 1px yellow solid;
+}
+.break{
+    flex-basis: 100%;
+}
+.name-task{
+    color: rgb(0, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin-bottom: 4%;
+}
+.description-task{
+    color: rgb(0, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-bottom: 4%;
+}
