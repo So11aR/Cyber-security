@@ -3,12 +3,7 @@ const arr_solve_tasks = Array(5).fill(false);
 console.log("Закрой консоль, ответы ты здесь не найдёшь :)");
 
 function check_end_game(){
-    for (let i=0; i < arr_solve_tasks.length; i++) {
-        if(arr_solve_tasks[i] === false){
-            return false;
-        }
-    }; 
-    return true;
+    return arr_solve_tasks.every(task => task);
 }
 
 const inputSelectors = [
@@ -30,7 +25,7 @@ const inputSelectors = [
     },
     {
         selector: "#task5",
-        correctAnswer: "flag{c0d3bR4_ctf}",
+        correctAnswer: "flag{c0d3br4_ctf}",
     },
 ];
 
